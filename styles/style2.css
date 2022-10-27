@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    color: blue;
+    font-size: 25px;
+}
+h2{
+    margin-bottom: 35px;
+    color: #666;
+    font-size: 15px;
+}
+
+p{
+    line-height: 26px;
+}
+.content{
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+} 
+.content__text{
+    padding: 30px;
+
+}
+.contact{
+    background-color: #0ff;
+    color: #fff;
+    padding: 30px;
+}
+.contact__list{
+    list-style-type: none;
+    padding: 0%;
+    margin: 0;
+}
+.contact__list__item{
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.contact__list__item__space:nth-child(1){
+    display: block;
+    width: 33%;
+}
+.content__end{
+    background-color: black;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+
+}
+.avatar{
+    background-color: black;
+    width: 225px;
+    height: 225px;
+    border-radius: 100%;
+    margin: auto;
+    border: 10px solid;
+    display:block ;
+    background-image: url("../image/avatar.png" );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+
+}
+@media(min-width: 768px){
+    .photo{
+        height: 100vh;
+        width: 50vw;
+        background-position: center ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: url("..//image/avatar.png");
+        position: fixed;
+      }
+    .content{
+        position:relative;
+        width: 50vw;
+        left: 50vw;
+    }
+}
+
+@media(min-width: 1000px){
+    h1{
+        color: red;
+        font-size: 45px;
+        transition: all 3s;
+        position: relative;
+    }
+}
